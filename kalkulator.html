@@ -22,9 +22,38 @@
 	
 	<main>
 	<article>
-		
+		<h1>Kalkulator BMI</h1>
+		<form>
+			<span>
+				<label for="jednostki">Jednostki:</label>
+				<select id="jednostki" name="jednostki">
+					<option value="metric">kg/cm</option>
+					<option value="imperial">lbs/inch</option>
+				</select>
+			</span>
 
-		
+			<br>
+
+			<span>
+				<label for="waga">Waga: </label>
+				<input id = "waga" name="waga" type="number" min="1 "placeholder="Wpisz wagę"><span id="span1"> kg</span>
+			</span>
+			
+			<br>
+
+			<span>
+			<label for="wzrost">Wzrost: </label>
+			<input id = "wzrost" name="wzrost" type="number" min="1" placeholder="Wpisz wzrost"><span id="span2"> cm</span>
+			</span>
+			<br>
+
+			<button type="button" onclick="obliczBMI()">Oblicz BMI</button>
+		</form>
+		<div id="wynik">
+			<span id="bmi"></span>
+			<span id="inter"></span>
+			<span id="wiadomosc"></span>
+		</div>
 	</article>	
 	</main>
 	
